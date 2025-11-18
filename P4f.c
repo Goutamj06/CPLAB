@@ -1,20 +1,19 @@
-C Program to print multiplication Table
-
-
-
+//(4f) program to calculate the sum of first n natural numbers for loop
 #include <stdio.h>
+int main()
+{
+    int n, sum = 0; 
 
-int main() {
-    int num, i;
+    printf("Enter a positive integer (n): ");
+    scanf("%d", &n); 
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
-
-    printf("\nMultiplication Table of %d\n", num);
-
-    for(i = 1; i <= 10; i++) {
-        printf("%d x %d = %d\n", num, i, num * i);
+    
+    for (int i = 1; i <= n; i++)
+    {
+        sum =sum+ i;
     }
 
-    return 0;
+    printf("The sum of the first %d natural numbers is: %d\n", n, sum);
+
+    return 0; 
 }
