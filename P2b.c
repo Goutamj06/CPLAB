@@ -1,11 +1,11 @@
+//(2b) c programm for input and display various data type
 #include <stdio.h>
-
-int main() {
+int main()
+{
     int i;
     float f;
     double d;
     char c;
-    char str[50];
 
     
     printf("Enter an integer: ");
@@ -20,8 +20,6 @@ int main() {
     printf("Enter a character: ");
     scanf(" %c", &c); 
 
-    printf("Enter a string (no spaces):");
-    scanf("%s", str);
 
    
     printf("\n--- Displaying Entered Values ---\n");
@@ -29,7 +27,19 @@ int main() {
     printf("Float: %.2f\n", f);
     printf("Double: %.4lf\n", d);
     printf("Character: %c\n", c);
-    printf("String: %s\n", str);
 
-    return 0;
+return 0;
 }
+
+
+output
+Enter an integer: 23
+Enter a float value: 34.5
+Enter a double value: 2343
+Enter a character: kavan
+
+--- Displaying Entered Values ---
+Integer: 23
+Float: 34.50
+Double: 2343.0000
+Character: k
