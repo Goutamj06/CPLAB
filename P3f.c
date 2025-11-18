@@ -1,16 +1,14 @@
-C Program for Conditional Operator
-
- #include <stdio.h>
-
-int main() {
-    int a, b, max;
-
-    printf("Enter two numbers: ");
-    scanf("%d %d", &a, &b);
-
-    max = (a > b) ? a : b;
-
-    printf("\nThe greater number is: %d\n", max);
-
-    return 0;
+//(3f)conditional operator
+#include<stdio.h>
+int main()
+{
+    int a=10,b=5;
+    printf("(a>b)?a:b %d\n",(a>b)?a:b);
+    a=6,b=8;
+    printf("(a>b)?a:b %d\n",(a>b)?a:b);
+    return 0;
 }
+
+output
+(a>b)?a:b 10
+(a>b)?a:b 8
