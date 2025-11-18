@@ -1,20 +1,25 @@
-C Program to print multiplication Table
-
-
+// 5. perform all arithmetic operations
 
 #include <stdio.h>
 
 int main() {
-    int num, i;
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+int a, b;
 
-    printf("\nMultiplication Table of %d\n", num);
+printf("Enter two numbers: ");
 
-    for(i = 1; i <= 10; i++) {
-        printf("%d x %d = %d\n", num, i, num * i);
-    }
+scanf("%d%d", &a, &b);
 
-    return 0;
+printf("Sum: %d\n", a + b);
+
+printf("Difference: %d\n", a - b);
+
+printf("Product: %d\n", a * b);
+
+printf("division: %d\n", a / b);
+
+printf("modulus: %d\n", a % b);
+
+return 0;
+
 }
