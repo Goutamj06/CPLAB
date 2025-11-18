@@ -1,24 +1,17 @@
-C Program for Increment/Decrement Operator
+//(3c) increment or decrement operator
 
- #include <stdio.h>
-
-int main() {
-    int a;
-
-    printf("Enter a number: ");
-    scanf("%d", &a);
-
-    printf("\nOriginal value of a = %d\n", a);
- 
-    printf("After pre-increment (++a): %d\n", ++a);
- 
-    printf("After post-increment (a++): %d\n", a++);
-    printf("Value after post-increment is executed: %d\n", a);
- 
-    printf("After pre-decrement (--a): %d\n", --a);
-
-    printf("After post-decrement (a--): %d\n", a--);
-    printf("Value after post-decrement is executed: %d\n", a);
-
-    return 0;
+#include<stdio.h>
+void main()
+{
+    int a=10;//to increment\decrement
+    printf("a++=%d\n",a++);
+    printf("a--=%d\n",a--);
+    printf("--a=%d\n",--a);
+    printf("++a=%d",++a);
 }
+
+output
+a++=10
+a--=11
+--a=9
+++a=10
