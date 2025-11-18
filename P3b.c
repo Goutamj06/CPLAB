@@ -1,35 +1,22 @@
-#include <stdio.h>
+//(3b)c program for swapping of 2 numbers
 
-int main() {
-    int i;
-    float f;
-    double d;
-    char c;
-    char str[50];
-
-    
-    printf("Enter an integer: ");
-    scanf("%d", &i);
-
-    printf("Enter a float value: ");
-    scanf("%f", &f);
-
-    printf("Enter a double value: ");
-    scanf("%lf", &d);
-
-    printf("Enter a character: ");
-    scanf(" %c", &c); 
-
-    printf("Enter a string (no spaces):");
-    scanf("%s", str);
-
-   
-    printf("\n--- Displaying Entered Values ---\n");
-    printf("Integer: %d\n", i);
-    printf("Float: %.2f\n", f);
-    printf("Double: %.4lf\n", d);
-    printf("Character: %c\n", c);
-    printf("String: %s\n", str);
-
-    return 0;
+#include<stdio.h>
+void main()
+{
+    int a=6,b=7;
+    int temp;
+    printf("before swapping\n");
+    printf("a=%d \t b=%d\n",a,b);
+    temp=a;
+    a=b;
+    b=temp;
+    printf("after swapping\n");
+    printf("a=%d \t b=%d",a,b);
 }
+
+output
+
+before swapping
+a=6 b=7
+after swapping
+a=7 b=6
