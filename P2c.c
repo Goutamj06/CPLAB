@@ -1,35 +1,17 @@
+//(2c) c program to print size of each data type
 #include <stdio.h>
-
-int main() {
-    int i;
-    float f;
-    double d;
-    char c;
-    char str[50];
-
-    
-    printf("Enter an integer: ");
-    scanf("%d", &i);
-
-    printf("Enter a float value: ");
-    scanf("%f", &f);
-
-    printf("Enter a double value: ");
-    scanf("%lf", &d);
-
-    printf("Enter a character: ");
-    scanf(" %c", &c); 
-
-    printf("Enter a string (no spaces):");
-    scanf("%s", str);
-
-   
-    printf("\n--- Displaying Entered Values ---\n");
-    printf("Integer: %d\n", i);
-    printf("Float: %.2f\n", f);
-    printf("Double: %.4lf\n", d);
-    printf("Character: %c\n", c);
-    printf("String: %s\n", str);
-
-    return 0;
+int main() 
+{
+    printf("Size of int: %zu\n", sizeof(int));
+    printf("Size of float: %zu\n", sizeof(float));
+    printf("Size of double: %zu\n", sizeof(double));
+    printf("Size of char: %zu\n", sizeof(char));
+     
+return 0;
 }
+
+output
+Size of int: 4
+Size of float: 4
+Size of double: 8
+Size of char: 1
