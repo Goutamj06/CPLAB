@@ -1,16 +1,17 @@
-C Program for Conditional Operator
-
- #include <stdio.h>
-
-int main() {
-    int a, b, max;
-
-    printf("Enter two numbers: ");
-    scanf("%d %d", &a, &b);
-
-    max = (a > b) ? a : b;
-
-    printf("\nThe greater number is: %d\n", max);
-
-    return 0;
+//(4b) c program for checking voting elegibility
+#include<stdio.h>
+void main()
+{
+    int age;
+    printf("enter age");
+    scanf("%d",&age);
+    if (age >= 18)
+        printf("he/she is elegibl to vote");
+    else
+    printf("he/she is not elegible to vote");
+    
 }
+
+output
+enter age23
+he/she is elegibl to vote
