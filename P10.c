@@ -1,4 +1,4 @@
-C Program to print multiplication Table
+//10 C Program to print multiplication Table
 
 
 
