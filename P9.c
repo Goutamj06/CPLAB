@@ -1,20 +1,24 @@
-C Program to print multiplication Table
-
-
+//9.grade of person for marks
 
 #include <stdio.h>
 
+
 int main() {
-    int num, i;
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+int marks;
 
-    printf("\nMultiplication Table of %d\n", num);
+printf("Enter marks: ");
 
-    for(i = 1; i <= 10; i++) {
-        printf("%d x %d = %d\n", num, i, num * i);
-    }
+scanf("%d",&marks);
 
-    return 0;
+if (marks>=50)
+
+printf("grade=pass", marks);
+
+else
+
+printf("grade=fail",marks);
+
+return 0;
+
 }
